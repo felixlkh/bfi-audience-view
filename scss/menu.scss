@@ -1,3 +1,74 @@
+#content .container .breadcrumb {
+  position: relative;
+  background: #f5f5f5;
+  width: 152vw;
+  left: -30vw;
+  padding: 25px 30vw;
+  border-radius: 0;
+
+  .breadcrumb-item {
+    padding: 0;
+    margin-right: 30px;
+    font-size: 18px;
+
+    a {
+      background-image: none;
+
+      &:hover {
+        color: #000;
+      }
+
+      &:after {
+        position: absolute;
+        display: block;
+        content: "";
+        height: 2px;
+        background-color: #783df6;
+        width: 0;
+        bottom: 0;
+        transition: 0.3s ease-in-out;
+      }
+
+      &:hover:after {
+        width: 100%;
+        opacity: .8;
+        visibility: visible;
+      }
+    }
+
+    &.breadcrumb-active {
+      color: #000;
+      box-sizing: border-box;
+      text-decoration: none;
+      outline: 0;
+      font-weight: 700;
+      background-image: linear-gradient(120deg, #783df6 0, #783df6 100%);
+      background-repeat: no-repeat;
+      background-size: 100% 2px;
+      background-position: 0 100%;
+      transition: 0.15s ease-in-out;
+    }
+
+    &:after {
+      margin: 5px 12px;
+      content: "";
+      width: 8px;
+      height: 14px;
+      font-weight: 700;
+      position: absolute;
+      background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSIxNyIgdmlld0JveD0iMCAwIDEwIDE3IiBmaWxsPSJub25lIj4KICA8cGF0aCBkPSJNMSAxNi41TDkgOC41TDAuOTk5OTk5IDAuNSIgc3Ryb2tlPSJibGFjayIvPgo8L3N2Zz4=);
+      background-size: contain;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #content .container .breadcrumb {
+    margin-top: -26px;
+  }
+}
+
+
 .menuContainer.main-nav {
   width: 100%;
   padding-right: 15px;
@@ -332,5 +403,46 @@
     float: right;
     margin-right: 15px;
     transition: .2s
+  }
+}
+.content-wrapper:has(.hide-search-box) .search-box {
+  display: none
+}
+
+@media(min-width: 992px) {
+  .content-wrapper:has(.menu-indicator-1) #menu .menuTopItem:nth-child(1) .menu_item,.content-wrapper:has(.menu-indicator-2) #menu .menuTopItem:nth-child(2) .menu_item,.content-wrapper:has(.menu-indicator-3) #menu .menuTopItem:nth-child(3) .menu_item,.content-wrapper:has(.menu-indicator-4) #menu .menuTopItem:nth-child(4) .menu_item,.content-wrapper:has(.menu-indicator-5) #menu .menuTopItem:nth-child(5) .menu_item,.content-wrapper:has(.menu-indicator-6) #menu .menuTopItem:nth-child(6) .menu_item,.content-wrapper:has(.menu-indicator-7) #menu .menuTopItem:nth-child(7) .menu_item,.content-wrapper:has(.menu-indicator-8) #menu .menuTopItem:nth-child(8) .menu_item,.content-wrapper:has(.menu-indicator-9) #menu .menuTopItem:nth-child(9) .menu_item,.content-wrapper:has(.menu-indicator-10) #menu .menuTopItem:nth-child(10) {
+    font-weight:700
+  }
+
+  .content-wrapper:has(.menu-indicator-1) #menu .menuTopItem:nth-child(1) .menu_item:after,.content-wrapper:has(.menu-indicator-2) #menu .menuTopItem:nth-child(2) .menu_item:after,.content-wrapper:has(.menu-indicator-3) #menu .menuTopItem:nth-child(3) .menu_item:after,.content-wrapper:has(.menu-indicator-4) #menu .menuTopItem:nth-child(4) .menu_item:after,.content-wrapper:has(.menu-indicator-5) #menu .menuTopItem:nth-child(5) .menu_item:after,.content-wrapper:has(.menu-indicator-6) #menu .menuTopItem:nth-child(6) .menu_item:after,.content-wrapper:has(.menu-indicator-7) #menu .menuTopItem:nth-child(7) .menu_item:after,.content-wrapper:has(.menu-indicator-8) #menu .menuTopItem:nth-child(8) .menu_item:after,.content-wrapper:has(.menu-indicator-9) #menu .menuTopItem:nth-child(9) .menu_item:after,.content-wrapper:has(.menu-indicator-10) #menu .menuTopItem:nth-child(10) .menu_item:after {
+    width: calc(100% - 30px)
+  }
+
+  .menuContainer.main-nav .nav .menuTopItem .menu_item {
+    border-left: 1px solid;
+    padding: 0 16px!important;
+    margin: 21px 0;
+    color: #000;
+    font-weight: 600
+  }
+
+  .menuContainer.main-nav .nav .menuTopItem:first-child .menu_item {
+    border-left: 0
+  }
+}
+
+.contact-us {
+  order: 1;
+  border-top: solid 1px #746d6d;
+  padding-top: 16px;
+  margin-bottom: 32px;
+
+  @media screen and (min-width: 992px) {
+    width: 70%;
+  }
+
+  .back-btn {
+    display: inline-block;
+    margin-top: 16px;
   }
 }

@@ -9,10 +9,6 @@
   padding: 0
 }
 
-.Brand {
-  padding-left: 10px
-}
-
 .Brand__img {
   width: 45px;
   height: 46px
@@ -41,6 +37,7 @@
     color: #fff !important;
     border-color: #fff !important;
     background-color: transparent !important;
+    margin-top: 5px;
   }
 }
 
@@ -48,11 +45,13 @@
   color: #fff;
   background-color: #783DF6;
   border: 2px solid #783DF6;
+  margin-top: 5px;
 }
 
 .btn.shopping-cart-link:hover {
   background-color: #310F7A;
   border: 2px solid #310F7A;
+  margin-top: 5px;
 }
 
 #header .menu-toggle:focus,
@@ -115,9 +114,6 @@
 }
 
 @media (max-width:575px) {
-  #header {
-    height: 66px;
-  }
   #header .menu-toggle {
     top: 10px !important;
   }
@@ -146,13 +142,6 @@
   }
 }
 
-@media (max-width: 991.98px) {
-  .Brand__img--desktop {
-    width: auto;
-    height: auto;
-    display: none
-  }
-}
 @media (min-width: 992px) {
   #header {
     padding-top: 74px;
@@ -167,11 +156,10 @@
       font-weight: 600;
       letter-spacing: 0.01em;
       #orderInfoEmptyMessage{
-        padding-top: 12px;
+        padding-top: 15px;
         display: inline-block;
       }
       #orderInfoItemCount{
-        padding-top: 5px;
         display: inline-block;
       }
     }
@@ -180,11 +168,18 @@
         #orderTimeout{
           position: absolute;
           right: 149px;
-          margin-top: 22px;
+          margin-top: 17px;
           color: white;
           font-style: normal;
         }
       }
     }
+  }
+  #orderInfoSecondBar #promoCodeList-box {
+    position: absolute;
+    right: 130px;
+    top: 40px;
+    font-weight: 600;
+    color: #fff
   }
 }

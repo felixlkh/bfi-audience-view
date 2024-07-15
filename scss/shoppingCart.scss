@@ -1,0 +1,626 @@
+#shoppingCart {
+  .odd, .even {
+    background: 0 0;
+  }
+
+  .order-lg-1 {
+    order: 1;
+  }
+
+  .order-lg-2 {
+    order: 2;
+  }
+
+  .col-lg-1 {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+  }
+
+  .col-lg-11 {
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%;
+  }
+
+  .offset-lg-6 {
+    margin-left: 0;
+  }
+
+  .col-lg-5 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  table {
+    font-size: 20px;
+  }
+
+  #shopping-cart-title {
+    border-bottom: 1px solid #746d6d;
+    padding-bottom: 32px;
+    margin-bottom: 0;
+  }
+
+  .row + .row {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .order-items {
+    .last-column {
+      text-align: left;
+    }
+
+    &.section-box #admission-section-title {
+      border-bottom: 1px solid #746d6d;
+      font-size: 27px;
+      padding: 15px 0 32px;
+      margin-bottom: 0;
+    }
+  }
+
+  .order-admissions {
+    margin: 0;
+  }
+
+  .shopping-table.admissions-table {
+    border-bottom: 1px solid #ddd;
+    border-top: 0;
+  }
+
+  .section-box-item {
+    border: 0;
+
+    .remove-admissions {
+      display: none;
+    }
+
+    .section-box-item-details {
+      .item-total-label {
+        margin-right: 26px;
+      }
+
+      .item-total-value {
+        left: 67%;
+        position: absolute;
+        width: 78px;
+        text-align: left;
+      }
+    }
+  }
+
+  .order-performance {
+    border-bottom: 1px solid #746d6d;
+    padding: 0;
+    margin-right: 0;
+    margin-left: 0;
+
+    .item-total {
+      font-weight: 700;
+    }
+
+    .performance-info, .order-1, .order-2 {
+      padding: 0;
+    }
+
+    .item-information {
+      border-bottom: 1px solid #746d6d;
+      padding-bottom: 16px;
+      margin: 0;
+      padding-top: 15px;
+    }
+
+    .item-short-description {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 16px;
+
+      button {
+        font-weight: 700;
+        background: 0 0;
+
+        &:hover {
+          color: unset !important;
+        }
+      }
+    }
+
+    .col-lg-1.order-1 .item-options {
+      button {
+        &:nth-child(1) {
+          background-color: unset;
+          border: 0;
+          background-repeat: no-repeat;
+          padding: 15px;
+          margin: 23px 0;
+          background-size: 30px;
+          float: right;
+          background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzQiIGhlaWdodD0iMzMiIHZpZXdCb3g9IjAgMCAzNCAzMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9Ikdyb3VwIDE4MDQiPgo8ZyBpZD0iR3JvdXAgMTgwMiI+CjxsaW5lIGlkPSJMaW5lIDE3IiB4MT0iMS42MTcyNiIgeTE9IjEuNTkyNyIgeDI9IjMyLjMxNzYiIHkyPSIzMi4yOTMiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIvPgo8bGluZSBpZD0iTGluZSAxOCIgeDE9IjIuMDkyNyIgeTE9IjMyLjI5MjkiIHgyPSIzMi43OTMiIHkyPSIxLjU5MjU1IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiLz4KPC9nPgo8L2c+Cjwvc3ZnPgo=);
+
+          svg {
+            display: none;
+          }
+        }
+
+        &:nth-child(2) {
+          display: none;
+        }
+      }
+
+      a {
+        display: none;
+      }
+    }
+
+    .col-lg-11.order-2 table {
+      margin: 0;
+      font-weight: 600;
+      padding: 7px 0;
+
+      thead {
+        opacity: 0;
+        display: none;
+      }
+
+      tbody td {
+        padding: 0;
+        vertical-align: middle;
+
+        .field-label {
+          display: none;
+        }
+
+        .field-value {
+          flex-basis: 100%;
+          margin-right: 0;
+          padding-left: 0;
+        }
+
+        &.adm-checkbox {
+          display: none;
+        }
+
+        &.adm-row {
+          width: 16px;
+        }
+
+        &.adm-addfriend {
+          display: none;
+        }
+
+        &.adm-price-type {
+          width: 200px;
+
+          select {
+            max-width: 100%;
+            border: 1px solid #000;
+            padding: 0 16px;
+            color: #000;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-repeat: no-repeat;
+            background-position-x: 96%;
+            background-position-y: 16px;
+            background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMTUiIHZpZXdCb3g9IjAgMCAyNSAxNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggaWQ9IlZlY3RvciA0IiBkPSJNMS4yMzk3NSAxLjVMMTIuMjM5NyAxMi41TDIzLjIzOTcgMS41IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjMiLz4KPC9zdmc+Cg==);
+            font-size: 20px;
+          }
+
+          .requiredIcon {
+            display: none;
+          }
+        }
+
+        &.amountVal {
+          text-align: left;
+        }
+
+        &.adm-price-value {
+          text-align: left;
+          padding-left: 20px;
+          width: 250px;
+        }
+      }
+    }
+  }
+
+  .donation-row .item-options button:nth-child(1) {
+    background-color: unset;
+    border: 0;
+    background-repeat: no-repeat;
+    padding: 15px;
+    bottom: 17px;
+    position: absolute;
+    margin-left: -30%;
+    left: 0;
+    background-size: 30px;
+    float: right;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzQiIGhlaWdodD0iMzMiIHZpZXdCb3g9IjAgMCAzNCAzMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9Ikdyb3VwIDE4MDQiPgo8ZyBpZD0iR3JvdXAgMTgwMiI+CjxsaW5lIGlkPSJMaW5lIDE3IiB4MT0iMS42MTcyNiIgeTE9IjEuNTkyNyIgeDI9IjMyLjMxNzYiIHkyPSIzMi4yOTMiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIvPgo8bGluZSBpZD0iTGluZSAxOCIgeDE9IjIuMDkyNyIgeTE9IjMyLjI5MjkiIHgyPSIzMi43OTMiIHkyPSIxLjU5MjU1IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiLz4KPC9nPgo8L2c+Cjwvc3ZnPgo=);
+
+    svg {
+      display: none;
+    }
+  }
+
+  .order-totals {
+    font-weight: 700;
+
+    th {
+      font-weight: 700;
+      width: 70%;
+    }
+
+    .order-totals-table {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .section-box-item {
+      border-bottom: 1px solid #d9d9d9;
+      padding: 16px 8.5% 16px 0;
+
+      .item-amount {
+        float: left;
+      }
+    }
+  }
+
+  .order-donations {
+    border-bottom: 1px solid #d9d9d9;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    .item-information {
+      padding-top: 15px;
+    }
+
+    #donation-section-title {
+      display: none;
+    }
+
+    .donation.section-box-item {
+      border-top: 0;
+      padding: 16px 0;
+    }
+  }
+
+  .donation-table {
+    .gift-appeal, .gift-fund .field-label {
+      display: none;
+    }
+
+    .field-value {
+      padding: 0;
+    }
+
+    .gift-amount {
+      .amountVal {
+        left: 69%;
+        margin-right: 0;
+      }
+
+      .field-label:before {
+        content: "10% donation";
+        float: left;
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        margin-top: 15px;
+        color: #000;
+      }
+    }
+  }
+
+  .navigation-box {
+    .col-lg-11 {
+      flex: 0 0 100%;
+      max-width: 100%;
+      display: grid;
+    }
+
+    .btn-primary {
+      min-width: 47%;
+      background-color: #783df6;
+      border: 0;
+      order: -1;
+
+      &:hover {
+        background-color: #310f7a;
+        border: 0;
+      }
+
+      &:focus {
+        border: 0;
+        background-color: #783df6;
+      }
+    }
+
+    .btn-secondary {
+      border: 0;
+      background-color: #000;
+      color: #fff;
+      width: 50%;
+
+      &:hover {
+        background-color: #310f7a;
+        border: 0;
+      }
+
+      &:focus {
+        border: 0;
+        background-color: #000;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #shoppingCart {
+    .col-lg-5 {
+      flex: 0 0 49%;
+      max-width: 49%;
+    }
+
+    .offset-lg-6 {
+      margin-left: 51%;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #shoppingCart {
+    .col-lg-5 {
+      flex: 0 0 44%;
+      max-width: 44%;
+    }
+
+    .offset-lg-6 {
+      margin-left: 56%;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #shoppingCart {
+    .col-lg-5 {
+      flex: 0 0 43.3%;
+      max-width: 43.3%;
+    }
+
+    .offset-lg-6 {
+      margin-left: 56.7%;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  #shoppingCart .section-box-item .section-box-item-details .item-total-label {
+    float: left;
+    padding: 0;
+    width: 62.5%;
+  }
+}
+
+@media (min-width: 768px) {
+  #shoppingCart .section-box-item .section-box-item-details .item-total-value {
+    position: static;
+  }
+}
+
+@media (min-width: 1200px) {
+  #shoppingCart .section-box-item .section-box-item-details .item-total-value {
+    width: 132px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #shoppingCart .order-performance .col-lg-1.order-1 .item-options button:nth-child(1) {
+    margin: 23px -40px;
+  }
+}
+
+@media (min-width: 992px) {
+  #shoppingCart .order-performance .col-lg-1.order-1 .item-options button:nth-child(1) {
+    margin: 23px -30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #shoppingCart .order-performance .col-lg-11.order-2 table tbody {
+    display: table-caption;
+
+    .admission-row-values {
+      display: block;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #shoppingCart .order-performance .col-lg-11.order-2 table tbody td {
+    margin: 16px 0 0;
+
+    &:not(.amountVal) {
+      display: flex;
+      align-items: center;
+    }
+
+    &.amountVal {
+      float: left;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  #shoppingCart .order-performance .col-lg-11.order-2 table tbody td.adm-seat {
+    position: absolute;
+    margin: -30px 0 0 20px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  #shoppingCart .order-performance .col-lg-11.order-2 table tbody td.adm-seat {
+    width: 23px;
+  }
+}
+
+@media (min-width: 992px) {
+  #shoppingCart .order-performance .col-lg-11.order-2 table tbody td.adm-price-type {
+    width: 320px;
+  }
+}
+
+@media (max-width: 767px) {
+  #shoppingCart .order-performance .col-lg-11.order-2 table tbody td.adm-price-type {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #shoppingCart .order-performance .col-lg-11.order-2 table tbody td.adm-price-value {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #shoppingCart .order-performance .col-lg-11.order-2 table tbody td.adm-price-value {
+    padding-left: 0;
+    text-align: left;
+    float: left;
+    width: 70%;
+  }
+}
+
+@media (min-width: 452px) {
+  #shoppingCart .donation-row .item-options button:nth-child(1) {
+    margin-left: -10%;
+  }
+}
+
+@media (min-width: 575px) {
+  #shoppingCart .donation-row .item-options button:nth-child(1) {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  #shoppingCart .donation-row .item-options button:nth-child(1) {
+    margin-left: 12px;
+  }
+}
+
+@media (min-width: 992px) {
+  #shoppingCart .donation-row .item-options button:nth-child(1) {
+    margin-left: 35px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #shoppingCart .order-totals th {
+    width: 73%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #shoppingCart .order-totals th {
+    width: 63%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #shoppingCart .order-totals .order-totals-table {
+    margin-top: 20px;
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #shoppingCart .order-totals .section-box-item {
+    padding: 16px 17.5% 16px 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #shoppingCart .order-donations {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #shoppingCart .donation-table .gift-fund {
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 72px;
+      width: 94vw;
+      left: 0;
+      border-bottom: 1px solid #746d6d;
+      margin: 0 15px;
+    }
+
+    .field-value {
+      padding-bottom: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #shoppingCart .donation-table {
+    .gift-fund .field-value {
+      width: 100%;
+    }
+
+    .gift-amount .amountVal {
+      position: absolute;
+      margin-top: 10px;
+      float: right;
+      right: 23px;
+      text-align: right;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  #shoppingCart .donation-table .gift-amount .amountVal {
+    margin-right: 24px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #shoppingCart .donation-table .gift-amount .amountVal {
+    margin-right: 78px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #shoppingCart .navigation-box .btn-primary {
+    min-width: 42%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #shoppingCart .navigation-box {
+    .col-lg-11 {
+      display: block;
+    }
+
+    .btn-secondary {
+      border: 0;
+      background-color: #000;
+      color: #fff;
+      width: auto;
+    }
+  }
+}
+
+.popup-add-donation .modal-dialog .modal-content {
+  border-radius: 0;
+
+  .modal-header {
+    border-bottom: 0;
+    font-size: 27px;
+  }
+
+  .modal-body .popupLogoImage {
+    display: none;
+  }
+}

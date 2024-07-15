@@ -1,0 +1,340 @@
+@media screen and (min-width: 992px) {
+  #orderContact {
+    width: 70%;
+  }
+}
+
+#orderContact {
+  .order-contact-heading {
+    border-bottom: 1px solid #746d6d;
+    margin-bottom: 16px;
+
+    p {
+      margin: 32px 0 0;
+    }
+  }
+
+  form .row {
+    .order-payment-details, .order-customer-details {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    #order-summary-title {
+      border: 0;
+    }
+
+    .item-box {
+      border-bottom: 1px solid #d9d9d9;
+
+      h4 {
+        margin-right: 16px;
+        font-size: 20px;
+        display: flex;
+        line-height: normal;
+
+        button {
+          position: absolute;
+          right: 15px;
+          font-size: 20px;
+        }
+      }
+
+      .item-box-item {
+        border: 0;
+        font-size: 20px;
+        padding: 0 0 15px;
+      }
+    }
+
+    .order-customer-delivery {
+      .item-box-item-details {
+        &.field-label {
+          display: none;
+        }
+
+        &.last-column {
+          float: unset;
+        }
+      }
+
+      .item-box-item:nth-child(3) {
+        display: none;
+      }
+    }
+
+    .payment-box {
+      #payments-title {
+        border-top: 1px solid #746d6d;
+        padding-top: 16px;
+        margin: 16px 0 6px;
+      }
+
+      p {
+        display: none;
+      }
+
+      .payment-methods-list {
+        display: block;
+
+        .payment-method-option {
+          width: 100%;
+          background: 0 0;
+          text-align: left;
+          border-bottom: 1px solid #d9d9d9;
+          margin: 0 0 8px;
+          padding-bottom: 8px;
+
+          label {
+            display: flex;
+            padding-left: 0;
+
+            input {
+              width: 20px;
+              height: 20px;
+              margin-right: 8px;
+
+              &:before {
+                content: "";
+                background: #fff;
+                border-radius: 100%;
+                border: 1px solid #000;
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                position: relative;
+                cursor: pointer;
+                text-align: center;
+                transition: all 250ms ease;
+              }
+
+              &:checked:before {
+                background-color: #000;
+                box-shadow: inset 0 0 0 3px #fff;
+              }
+            }
+          }
+        }
+      }
+
+      .payment-input-box {
+        background: #f5f5f5;
+        border: 0;
+        display: inline-block;
+        margin-top: 30px;
+
+        ul {
+          display: grid;
+
+          li {
+            border-bottom: 1px solid #d9d9d9;
+            padding-bottom: 16px;
+
+            .requiredIcon {
+              display: none;
+            }
+
+            &:nth-child(1) {
+              order: 1;
+            }
+
+            &:nth-child(2) {
+              order: 2;
+            }
+
+            &:nth-child(3) {
+              order: 4;
+            }
+
+            &:nth-child(4) {
+              order: 3;
+            }
+
+            &:nth-child(5) {
+              order: 5;
+
+              &:after {
+                content: "The three digit security code on the back of your card. If you have AMEX, it's the front four digits.";
+                font-size: 16px;
+                position: relative;
+                display: block;
+                margin-top: 16px;
+              }
+            }
+
+            &:nth-child(6) {
+              order: 6;
+              display: none;
+            }
+
+            &:nth-child(7) {
+              order: 7;
+            }
+
+            &.selected-payment-method-name {
+              margin: 0;
+              padding: 0;
+              border: 0;
+
+              .field-value {
+                padding: 0;
+                margin-bottom: 16px;
+                font-size: 22px;
+                font-weight: 700;
+              }
+            }
+
+            .field-label {
+              color: #000;
+            }
+
+            input {
+              width: 100%;
+              background: 0 0;
+              border: 1px solid;
+              max-width: unset;
+            }
+
+            .input-group {
+              width: 100%;
+            }
+
+            + .no-label-indent {
+              border: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .order-totals {
+      border: 0;
+      float: right;
+      margin-top: 0;
+      padding-top: 6px;
+
+      #purchase-total-title {
+        border-top: 1px solid #746d6d;
+        padding-top: 16px;
+        margin: 16px 0 6px;
+        font-size: 22px;
+        font-weight: 700;
+      }
+
+      .section-box-item {
+        border-top: 0;
+        border-bottom: 1px solid #d9d9d9;
+        padding-left: 0;
+
+        .section-box-item-details {
+          width: 70%;
+        }
+
+        .field-label {
+          color: #000;
+        }
+
+        .last-column {
+          float: left;
+          width: auto;
+        }
+      }
+    }
+
+    #purchaseBox {
+      border: 0;
+      display: grid;
+
+      .btn-secondary {
+        order: 1;
+        border: 0;
+        background-color: #000;
+        color: #fff;
+        width: 50%;
+        margin-top: 32px;
+
+        &:hover {
+          background-color: #310f7a;
+          border: 0;
+        }
+
+        &:focus {
+          border: 0;
+          background-color: #000;
+        }
+      }
+
+      .btn-primary {
+        min-width: 47%;
+        background-color: #783df6;
+        border: 0;
+        order: -1;
+
+        &:hover {
+          background-color: #310f7a;
+          border: 0;
+        }
+
+        &:focus {
+          border: 0;
+          background-color: #783df6;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  #orderContact form .row .item-box {
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) {
+  #orderContact form .row .item-box h4 {
+    width: 25%;
+  }
+}
+
+@media (min-width: 768px) {
+  #orderContact form .row .item-box .item-box-item {
+    max-width: 60%;
+  }
+}
+
+@media (min-width: 768px) {
+  #orderContact form .row .payment-box .payment-input-box ul li .field-label {
+    width: 40%;
+  }
+}
+
+@media (min-width: 768px) {
+  #orderContact form .row .payment-box .payment-input-box ul li input {
+    width: 40%;
+  }
+}
+
+@media (min-width: 768px) {
+  #orderContact form .row .payment-box .payment-input-box ul li .input-group {
+    width: 40%;
+  }
+}
+
+@media (min-width: 768px) {
+  #orderContact form .row .order-totals {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #orderContact form .row #purchaseBox {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #orderContact form .row #purchaseBox .btn-secondary {
+    width: auto;
+    margin-top: 0;
+  }
+}

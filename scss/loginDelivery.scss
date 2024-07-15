@@ -1,0 +1,302 @@
+@media screen and (min-width: 992px) {
+  #loginDelivery {
+    width: 70%;
+  }
+}
+
+#loginDelivery {
+  h1 {
+    border-bottom: 1px solid #746d6d;
+    padding-bottom: 32px;
+    margin-bottom: 0;
+  }
+
+  #frmLoginDelivery {
+    .delivery-methods {
+      border: 0;
+      margin: 0;
+      padding-top: 16px;
+
+      h4 {
+        font-size: 22px;
+        font-weight: 700 !important;
+        margin: 0;
+      }
+
+      #delivery-method-group .delivery-method {
+        background: 0 0;
+        border-bottom: 1px solid #d9d9d9;
+        display: flex;
+        padding: 16px 0;
+
+        .delivery-method-info div {
+          font-size: 20px;
+        }
+
+        label {
+          margin-bottom: 16px;
+        }
+
+        input {
+          width: 20px;
+          height: 20px;
+          margin-right: 8px;
+
+          &:before {
+            content: "";
+            background: #fff;
+            border-radius: 100%;
+            border: 1px solid #000;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            position: relative;
+            cursor: pointer;
+            text-align: center;
+            transition: all 250ms ease;
+          }
+
+          &:checked:before {
+            background-color: #000;
+            box-shadow: inset 0 0 0 3px #fff;
+          }
+        }
+      }
+    }
+
+    .order-contact {
+      margin: 32px 0 10px;
+      border-top: 1px solid #746d6d;
+      padding: 16px 0 0;
+
+      .order-billing {
+        padding: 0;
+        flex: 0 0 100%;
+        max-width: 100%;
+
+        &:before {
+          content: "Confirm details";
+          margin-bottom: 16px;
+          color: #000;
+          font-size: 22px;
+          font-style: normal;
+          font-weight: 700;
+          display: block;
+        }
+
+        .billing-info {
+          display: block;
+          border-bottom: 1px solid #d9d9d9;
+          margin-bottom: 16px;
+          padding-bottom: 16px;
+          min-height: unset;
+          align-items: flex-end;
+
+          label {
+            width: 200px;
+
+            .field-label {
+              color: #000;
+            }
+          }
+
+          > div {
+            width: 100%;
+
+            select {
+              max-width: 100%;
+              border: 1px solid #000;
+              padding: 0 35px 0 16px;
+              color: #000;
+              -webkit-appearance: none;
+              -moz-appearance: none;
+              background-repeat: no-repeat;
+              background-position-x: 96%;
+              background-position-y: 16px;
+              background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMTUiIHZpZXdCb3g9IjAgMCAyNSAxNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggaWQ9IlZlY3RvciA0IiBkPSJNMS4yMzk3NSAxLjVMMTIuMjM5NyAxMi41TDIzLjIzOTcgMS41IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjMiLz4KPC9zdmc+Cg==);
+              font-size: 20px;
+              border-radius: 0;
+              width: 100%;
+              text-overflow: ellipsis;
+            }
+
+            .btn-group {
+              text-align: left;
+
+              .btn {
+                border: 0;
+                color: #000;
+                box-sizing: border-box;
+                text-decoration: none;
+                outline: 0;
+                font-weight: 600;
+                background-image: linear-gradient(120deg, #783df6 0, #783df6 100%);
+                background-repeat: no-repeat;
+                background-size: 100% 2px;
+                background-position: 0 100%;
+                transition: .15s ease-in-out;
+                padding: 0;
+                margin: 10px 0 0;
+              }
+            }
+          }
+
+          &.billing-email {
+            min-height: unset;
+
+            .search {
+              display: block;
+              width: 100%;
+              border: 1px solid #000;
+              padding: 9px 18px;
+            }
+
+            .btn {
+              border: 0;
+              color: #000;
+              box-sizing: border-box;
+              text-decoration: none;
+              outline: 0;
+              font-weight: 600;
+              background-image: linear-gradient(120deg, #783df6 0, #783df6 100%);
+              background-repeat: no-repeat;
+              background-size: 100% 2px;
+              background-position: 0 100%;
+              transition: .15s ease-in-out;
+              padding: 0;
+              height: fit-content;
+              margin-top: 10px;
+              margin-left: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .navigation-box {
+      padding: 0;
+      margin: 0;
+      border-top: 0;
+      display: grid;
+
+      .btn-secondary {
+        order: 1;
+        border: 0;
+        background-color: #000;
+        color: #fff;
+        width: 50%;
+        margin-top: 32px;
+
+        &:hover {
+          background-color: #310f7a;
+          border: 0;
+        }
+
+        &:focus {
+          border: 0;
+          background-color: #000;
+        }
+      }
+
+      .btn-primary {
+        min-width: 47%;
+        background-color: #783df6;
+        border: 0;
+        order: -1;
+
+        &:hover {
+          background-color: #310f7a;
+          border: 0;
+        }
+
+        &:focus {
+          border: 0;
+          background-color: #783df6;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #loginDelivery #frmLoginDelivery .order-contact .order-billing .billing-info {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #loginDelivery #frmLoginDelivery .order-contact .order-billing .billing-info > div {
+    display: flex;
+    width: calc(100% - 200px);
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #loginDelivery #frmLoginDelivery .order-contact .order-billing .billing-info > div select {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #loginDelivery #frmLoginDelivery .order-contact .order-billing .billing-info > div .btn-group {
+    text-align: right;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #loginDelivery #frmLoginDelivery .order-contact .order-billing .billing-info > div .btn-group .btn {
+    margin: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  #loginDelivery #frmLoginDelivery .order-contact .order-billing .billing-info.billing-email .search {
+    width: calc(71.5% - 200px);
+    display: inline;
+  }
+}
+
+@media (min-width: 992px) {
+  #loginDelivery #frmLoginDelivery .order-contact .order-billing .billing-info.billing-email .search {
+    width: calc(72.5% - 200px);
+  }
+}
+
+@media (min-width: 1200px) {
+  #loginDelivery #frmLoginDelivery .order-contact .order-billing .billing-info.billing-email .search {
+    width: calc(70.5% - 200px);
+  }
+}
+
+@media (min-width: 768px) {
+  #loginDelivery #frmLoginDelivery .order-contact .order-billing .billing-info.billing-email .btn {
+    margin-left: 19%;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  #loginDelivery #frmLoginDelivery .order-contact .order-billing .billing-info.billing-email .btn {
+    margin-left: 17.5%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #loginDelivery #frmLoginDelivery .order-contact .order-billing .billing-info.billing-email .btn {
+    margin-left: 21.5%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #loginDelivery #frmLoginDelivery .navigation-box {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #loginDelivery #frmLoginDelivery .navigation-box .btn-secondary {
+    width: auto;
+    margin-top: 0;
+  }
+}
